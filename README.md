@@ -9,5 +9,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword (read contents of file)
 .gitignore: https://linuxize.com/post/gitignore-ignoring-files-in-git/
 git reset (unstage everything added locally)
 
+```
 git submodule update --init
+```
 "The submodule update command will recurse into the registered submodules, update and init (if required) them and any nested submodules within. foreach will evaluate the command in each checked out submodule. So it will update and init (if required) each submodule and any nested submodules within due to --recursive." -Stack Overflow
