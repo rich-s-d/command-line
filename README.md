@@ -20,3 +20,9 @@ npm install
 npm start
 
 ```
+## AWS
+To assume role after logging into aws-adfs with a profile called "dev":
+```
+export AWS_PROFILE = "dev"
+aws sts assume-role --role-arn "REPLACE WITH ARN" --role-session-name AWSCLI-Session
+```
