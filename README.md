@@ -34,3 +34,8 @@ To assume role after logging into aws-adfs with a profile called "dev":
 export AWS_PROFILE = "dev"
 aws sts assume-role --role-arn "REPLACE WITH ARN" --role-session-name AWSCLI-Session
 ```
+## Go
+go get <Import path of package> will not update an existing installation, instead run:
+```
+go get -u github.com/terraform-docs/terraform-docs@v0.13.0
+```
