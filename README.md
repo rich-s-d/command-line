@@ -7,6 +7,10 @@ vi filename (https://www.guru99.com/the-vi-editor.html)
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword (read contents of file)
 
 export PATH="$PATH:/home/shane/aws-live/master/bin"
+
+To create a symbolic link navigate to the directory you want the link and run the following placing the path where ../../original.tf is.
+ln -s ../../original.tf .
+
 ```
 ## git
 .gitignore: https://linuxize.com/post/gitignore-ignoring-files-in-git/
