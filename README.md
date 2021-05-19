@@ -43,3 +43,14 @@ go get <Import path of package> will not update an existing installation, instea
 ```
 go get -u github.com/terraform-docs/terraform-docs@v0.13.0
 ```
+
+## Apache Tomcat/Geoserver
+in tomcats bin start with:
+```
+sudo ./startup.sh
+chmod +x shutdown.sh  if file not found error
+```
+shut down with
+```
+sudo ./shutdown.sh
+```
