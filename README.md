@@ -26,6 +26,10 @@ git tag # list tags
 git tag -a v3.7.2 -m "Add CreateLogStream policy to gis-backend role" # create annotated tag. can also use a lightweight.
 git push --tags
 ```
+link local project to new empty github repo:
+```
+git remote add origin [copied web address]
+```
 ## Angular
 ```
 npm install
