@@ -16,6 +16,15 @@ ln -s ../../original.tf .
 .gitignore: https://linuxize.com/post/gitignore-ignoring-files-in-git/
 git reset (unstage everything added locally)
 ```
+git rebase origin/master
+git status
+# resolve conflicts
+git add # as required
+git rm # as required
+# once resolved, added and removed
+git rebase --continue
+git push -f
+
 git submodule update --init
 ```
 "The submodule update command will recurse into the registered submodules, update and init (if required) them and any nested submodules within. foreach will evaluate the command in each checked out submodule. So it will update and init (if required) each submodule and any nested submodules within due to --recursive." -Stack Overflow
