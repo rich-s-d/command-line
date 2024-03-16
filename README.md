@@ -11,6 +11,12 @@ export PATH="$PATH:/home/shane/aws-live/master/bin"
 To create a symbolic link navigate to the directory you want the link and run the following placing the path where ../../original.tf is.
 ln -s ../../original.tf .
 
+which bash
+cat test.txt | sort | uniq -c
+cat two_cities.txt | grep "Charles Darnay\|Sydney Carton" | wc -l
+cat test.txt | cut -d " " -f 3 | sort | uniq -c
+
+
 ```
 ## git
 .gitignore: https://linuxize.com/post/gitignore-ignoring-files-in-git/
