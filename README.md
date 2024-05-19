@@ -3,6 +3,8 @@ Cheat Sheet for command line interfaces.
 
 ## Linux
 ```
+PS1="\[\033[1;35m\]<\u@\h \w> \$\[\033[0m\]"
+
 vi filename (https://www.guru99.com/the-vi-editor.html)
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword (read contents of file)
 
