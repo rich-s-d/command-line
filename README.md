@@ -4,7 +4,11 @@ Cheat Sheet for command line interfaces.
 ## Linux
 ```
 PS1="\[\033[s\033[0;0H\033[0;41m\033[K\033[1;33m\t\033[0m\033[u\]<\u@\h\W>\$ "
+
+# for .bashrc
 PS1="\[\033[1;35m\]<\u@\h \w> \$\[\033[0m\]"
+export PS1
+alias ll="ls -lah"
 
 vi filename (https://www.guru99.com/the-vi-editor.html)
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword (read contents of file)
