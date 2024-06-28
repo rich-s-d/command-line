@@ -49,6 +49,10 @@ echo expr 3 + 1 (use expr for integers), or double bracket notation, e.g., echo 
 
 ```
 ## git
+Delete all branches locally that are no longer on remote.
+```
+git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+```
 .gitignore: https://linuxize.com/post/gitignore-ignoring-files-in-git/
 git reset (unstage everything added locally)
 ```
