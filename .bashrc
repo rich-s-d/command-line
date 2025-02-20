@@ -10,10 +10,12 @@ alias ll="ls -lah"
 GREEN="\[\033[1;32m\]"
 RESET="\[\033[0m\]"
 
-# Function to get the current Git branch
-parse_git_branch() {
-  git branch 2>/dev/null | sed -n '/\* /s///p'
-}
+# Load Git prompt (this is included with Git)
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+    source /usr/share/git-core/contrib/completion/git-prompt.sh
+elif [ -f /etc/bash_completion.d/git-prompt ]; then
+    source /etc/bash_completion.d/git-prompt
+fi
 
-# Update PS1 to include Git branch and green color
-PS1="${GREEN}<\u@\h \w>\$(if [ -d .git ] || git rev-parse --is-inside-work-tree 2>/dev/null; then echo ' [$(parse_git_branch)]'; fi) \$${RESET} "
+# Update PS1 to show Git branch dynamically
+PS1="${GREEN}<\u@\h \w>\$(__git_ps1 ' [%s]') \$${RESET} "
