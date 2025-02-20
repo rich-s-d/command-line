@@ -1,6 +1,6 @@
 alias apt-up='sudo apt-get update && sudo apt-get upgrade'
 alias rm='rm -iv'
-alias rmrf='rm -ivrf'
+alias rmr='rm -ivr'
 
 #PS1="\[\033[1;35m\]<\u@\h \w> \$\[\033[0m\]"
 #export PS1
